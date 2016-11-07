@@ -1,0 +1,43 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+    </head>
+    <body>
+        
+       <button onclick="buttonaction()"> search </button>
+
+    
+    
+        <script type = "text/javascript">
+        
+        var response;
+        
+        function buttonaction()
+        {
+            alert(response);
+        }
+    
+        var httprequest = new XMLHttpRequest();
+        var url = "https://info2180lab6-zamonth.c9users.io/request.php?q=definition";
+        httprequest.onreadystatechange = somecallback;
+    
+        function somecallback(){
+            if ( httprequest.readyState === httprequest.DONE)
+            {
+        
+                if (httprequest.status === 200)
+                {
+                    response = httprequest.responseText;
+                }
+            }
+        
+        }
+        
+        httprequest.open('GET', url, true);
+        httprequest.send(" ");
+    
+
+
+    </script>
+    </body>
+</html>
