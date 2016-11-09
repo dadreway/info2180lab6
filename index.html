@@ -1,6 +1,7 @@
 <!DOCTYPE html> 
 <html>
     <head>
+        <title> Web Dictionary</title>
         <script type="text/javascript" src="dascript.js"></script>
     </head>
     <body>
@@ -9,7 +10,7 @@
         <div>
             <p>look up the defintion of a word(eg php, javascript, css):</p>
         
-        <form onsubmit= "GetDocument()">
+        <form onsubmit= "javascript:GetDocument();return false;">
             <input type="text" id="word">
             <input type="button" id="btnSearch" value="Search" onclick="GetDocument()">
         </form><br>
