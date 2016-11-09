@@ -1,43 +1,23 @@
 <!DOCTYPE html> 
 <html>
     <head>
+        <script type="text/javascript" src="dascript.js"></script>
     </head>
     <body>
+        <div>Web Dictionary</div>
         
-       <button onclick="buttonaction()"> search </button>
+        <div>
+            <p>look up the defintion of a word(eg php, javascript, css):</p>
+        
+        <form onsubmit= "GetDocument()">
+            <input type="text" id="word">
+            <input type="button" id="btnSearch" value="Search" onclick="GetDocument()">
+        </form><br>
+        <div/>
+       
+       <div id= "result">
+            Your definition will appear here.
+        </div>
 
-    
-    
-        <script type = "text/javascript">
-        
-        var response;
-        
-        function buttonaction()
-        {
-            alert(response);
-        }
-    
-        var httprequest = new XMLHttpRequest();
-        var url = "https://info2180lab6-zamonth.c9users.io/request.php?q=definition";
-        httprequest.onreadystatechange = somecallback;
-    
-        function somecallback(){
-            if ( httprequest.readyState === httprequest.DONE)
-            {
-        
-                if (httprequest.status === 200)
-                {
-                    response = httprequest.responseText;
-                }
-            }
-        
-        }
-        
-        httprequest.open('GET', url, true);
-        httprequest.send(" ");
-    
-
-
-    </script>
     </body>
 </html>
