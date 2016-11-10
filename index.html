@@ -12,7 +12,8 @@
         
         <form onsubmit= "javascript:GetDocument();return false;">
             <input type="text" id="word">
-            <input type="button" id="btnSearch" value="Search" onclick="GetDocument()">
+            <input type="button" id="Search" value="Search" onclick="GetDocument(false)">
+            <input type="button" id= "allsearch" value="Get all definitions" onclick = "GetDocument(true)"/>
         </form><br>
         <div/>
        
