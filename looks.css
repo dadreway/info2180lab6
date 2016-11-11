@@ -1,0 +1,12 @@
+.topcontainer {
+    height: 90px;
+    border-color: red;
+    background-color: #963cad;
+    font-family: sans-serif;
+    line-height: 90px;
+    text-align: center
+}
+
+.bottomcontainer{
+    background-color: #817e82;
+}
