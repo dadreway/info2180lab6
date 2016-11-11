@@ -4,9 +4,11 @@
     background-color: #963cad;
     font-family: sans-serif;
     line-height: 90px;
-    text-align: center
+    text-align: left;
+    padding-left: 10px;
 }
 
 .bottomcontainer{
     background-color: #817e82;
+    padding-left: 10px;
 }
