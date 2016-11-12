@@ -10,20 +10,22 @@
             {
                 if (this.readyState == 4 && this.status == 200)
                 {
-                       XML(this,fullSearch,lookup); 
+                       loadXML(this,fullSearch,lookup); 
                 }
             };
             httprequest.open("GET", "request.php", true);
             httprequest.send();
         }
         
-        function XML(doc, fullSearch ,lookup)
+        function loadXML(doc, fullSearch ,lookup)
         {
             var tochange = document.getElementById("result");
             var file = doc.responseXML;
+            var definitions = "<ol>";
+            //var tags = file.getElementsByTagName("definition");
             var tags = file.getElementsByTagName("definition");
             var notlocated = true;
-            var definitions = "<ol>";
+            
             
             if (fullSearch)
             {

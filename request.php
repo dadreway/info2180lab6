@@ -1,6 +1,5 @@
-
 <?php
-$xmldata = '<?xml version="1.0" encoding="UTF-8"?>
+$data = '<?xml version="1.0" encoding="UTF-8"?>
 <entries>
     <definition name="Definition" author="Michael">
     A statement of the exact meaning of a word, especially in a
@@ -25,6 +24,8 @@ $xmldata = '<?xml version="1.0" encoding="UTF-8"?>
     A server-side scripting language, and a powerful tool for making dynamic and interactive websites.
     </definition>
 </entries>';
+
 header('Content-Type: text/xml');
-$xmlOutput = new SimpleXMLElement($xmldata);
-echo $xmlOutput->asXML();
+$xmlOutput = new SimpleXMLElement($data);
+//echo $xmlOutput->asXML();
+print($xmlOutput -> asXML());

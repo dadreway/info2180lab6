@@ -2,7 +2,7 @@
 <html>
     <head>
         <title> Web Dictionary</title>
-        <script type="text/javascript" src="dascript.js"></script>
+        <script src ="dascript.js" type="text/javascript" ></script>
         <link rel="stylesheet" type="text/css" href="looks.css">
     </head>
     
@@ -14,7 +14,7 @@
         <div class = "bottomcontainer">
             <p>look up the defintion of a word(eg php, javascript, css):</p>
         
-        <form onsubmit= "javascript:GetDocument();return false;">
+        <form onsubmit= "javascript:GetDocument(false);return false;">
             <input type="text" id="word">
             <input type="button" id="Search" value="Search" onclick="GetDocument(false)">
             <input type="button" id= "allsearch" value="Get all definitions" onclick = "GetDocument(true)"/>
